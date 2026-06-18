@@ -1,0 +1,32 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node.js
+node_modules/
+dist/
+build/
+
+# Models & Large files
+model/*.pt
+model/*.pkl
+*.joblib
+*.pth
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
