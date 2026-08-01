@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOGuard | Hazard Predictor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Unified Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="icon">✦</span> NEOGuard
+            </div>
+            <ul class="nav-links">
+                <li><a href="/static/index.html">Home</a></li>
+                <li><a href="/static/index.html#about">About Model</a></li>
+                <li><a href="https://www.kaggle.com/datasets/sameepvani/nasa-nearest-earth-objects" target="_blank">Dataset</a></li>
+                <li><a href="/static/rules.html">Rules & Constraints</a></li>
+                <li><a href="https://github.com/Gentle-pc-user" target="_blank">GitHub</a></li>
+                <li><a href="/static/predict.html" class="nav-predict active">Predict Hazard</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#signin" class="sign-in">Sign In</a>
+                <a href="/static/predict.html" class="btn-primary ripple">Run API</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Predict Main Content -->
+    <main class="predict-main">
+        <div class="form-header">
+            <h1 class="section-heading">Analyze <span class="highlight">Asteroid</span> Data</h1>
+            <p class="hero-subtitle">Enter physical parameters of the near-earth object to calculate its hazard probability using our Deep Neural Network.</p>
+        </div>
+
+        <form id="predict-form" class="prediction-form dark-card">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="est_diameter_min">Min Estimated Diameter (km)</label>
+                    <input type="number" step="any" id="est_diameter_min" placeholder="e.g., 0.143" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="est_diameter_max">Max Estimated Diameter (km)</label>
+                    <input type="number" step="any" id="est_diameter_max" placeholder="e.g., 2.679" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="relative_velocity">Relative Velocity (km/h)</label>
+                    <input type="number" step="any" id="relative_velocity" placeholder="e.g., 13569.24" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="miss_distance">Miss Distance (km)</label>
+                    <input type="number" step="any" id="miss_distance" placeholder="e.g., 54839740" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sentry_object">Sentry Object</label>
+                    <select id="sentry_object" required>
+                        <option value="false">False (Not Monitored)</option>
+                        <option value="true">True (Actively Monitored)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="absolute_magnitude">Absolute Magnitude (H)</label>
+                    <input type="number" step="any" id="absolute_magnitude" placeholder="e.g., 16.73" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary btn-submit ripple">Run Prediction API</button>
+        </form>
+
+        <!-- Result Container -->
+        <div id="result-container" class="result-box hidden"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 40px; border-top: 1px solid rgba(255,255,255,0.05); margin-top: auto;">
+        <p style="color: var(--text-gray); font-size: 14px;">&copy; 2026 NEO Planetary Defense Initiative. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/script.js"></script> 
+    <script src="/static/app.js"></script> 
+</body>
+</html>

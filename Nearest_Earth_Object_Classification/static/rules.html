@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOGuard | Rules & Constraints</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Unified Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="icon">✦</span> NEOGuard
+            </div>
+            <ul class="nav-links">
+                <li><a href="/static/index.html">Home</a></li>
+                <li><a href="/static/index.html#about">About Model</a></li>
+                <li><a href="https://www.kaggle.com/datasets/sameepvani/nasa-nearest-earth-objects" target="_blank">Dataset</a></li>
+                <li><a href="/static/rules.html" class="active">Rules & Constraints</a></li>
+                <li><a href="https://github.com/Gentle-pc-user" target="_blank">GitHub</a></li>
+                <li><a href="/static/predict.html" class="nav-predict">Predict Hazard</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#signin" class="sign-in">Sign In</a>
+                <a href="/static/predict.html" class="btn-primary ripple">Run API</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="rules-main">
+        <div class="form-header">
+            <h1 class="section-heading">Data Constraints & <span class="highlight">Rules</span></h1>
+            <p class="hero-subtitle">Valid ranges and requirements for celestial parameters parsed by the neural network.</p>
+        </div>
+
+        <ul class="rules-list">
+            <li><strong>Minimum Estimated Diameter:</strong> Must be greater than -1 and less than 38 kilometers.</li>
+            <li><strong>Maximum Estimated Diameter:</strong> Must be greater than -1 and less than 85 kilometers.</li>
+            <li><strong>Relative Velocity:</strong> Object velocity relative to Earth must fall between 200 and 246,990 km/h.</li>
+            <li><strong>Miss Distance:</strong> The distance the object misses Earth must be greater than 1,000 km.</li>
+            <li><strong>Sentry Object:</strong> Indicates whether the object is actively monitored by automated collision systems (True/False).</li>
+            <li><strong>Absolute Magnitude:</strong> Intrinsic luminosity rating must be between 8.50 and 34.</li>
+        </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 40px; border-top: 1px solid rgba(255,255,255,0.05); margin-top: auto;">
+        <p style="color: var(--text-gray); font-size: 14px;">&copy; 2026 NEO Planetary Defense Initiative. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/static/script.js"></script>
+</body>
+</html>

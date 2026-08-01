@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEOGuard | Asteroid Hazard Prediction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/png" href="/static/asteroid_icon.png">
+</head>
+<body>
+    <!-- Clean, Unified Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="icon">✦</span> NEOGuard
+            </div>
+            <ul class="nav-links">
+                <!-- Highlighted Home Link in Nav -->
+                <li><a href="/static/index.html" class="active">Home</a></li>
+                <li><a href="#about">About Model</a></li>
+                <li><a href="https://www.kaggle.com/datasets/sameepvani/nasa-nearest-earth-objects" target="_blank">Dataset</a></li>
+                <li><a href="/static/rules.html">Rules & Constraints</a></li>
+                <li><a href="https://github.com/Gentle-pc-user" target="_blank">GitHub</a></li>
+                <li><a href="/static/predict.html" class="nav-predict">Predict Hazard</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="#signin" class="sign-in">Sign In</a>
+                <!-- Prominent Predict Button in Header -->
+                <a href="/static/predict.html" class="btn-primary ripple">Run API</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <!-- Staggered Typography with Inline Images matching the reference -->
+            <div class="title-line justify-start">
+                <h1 class="hero-title">Predict <span class="highlight">hazards</span></h1>
+            </div>
+            
+            <div class="title-line justify-end">
+                <img src="/static/cosmos_1.webp" alt="Cosmos" class="inline-pill">
+                <h1 class="hero-title"> of near-earth</h1>
+            </div>
+            
+            <div class="title-line justify-start">
+                <h1 class="hero-title highlight">objects</h1>
+                <img src="/static/Asteroids_belt.webp" alt="Asteroids" class="inline-pill">
+                <h1 class="hero-title">in space</h1>
+            </div>
+
+            <p class="hero-subtitle">
+                Early detection of Near-Earth Objects (NEOs) is vital for planetary defense. 
+                Our Deep Neural Network analyzes orbital mechanics to classify celestial threats before they arrive.
+            </p>
+        </div>
+
+        <!-- Prediction Call-to-Action Card (White Bar) -->
+        <div class="prediction-card">
+            <div class="card-stats">
+                <div class="stat-block">
+                    <span class="label">System Model</span>
+                    <h4>Deep Neural Network</h4>
+                </div>
+                <div class="stat-block">
+                    <span class="label">Status</span>
+                    <h4 class="highlight-text">Active & Online</h4>
+                </div>
+                <div class="stat-block">
+                    <span class="label">Target</span>
+                    <h4>Near-Earth Asteroids</h4>
+                </div>
+            </div>
+            <!-- Huge, highly visible Predict Button -->
+            <a href="/static/predict.html" class="btn-primary btn-large ripple">Access Predictor</a>
+        </div>
+    </header>
+
+    <!-- About the Project Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-heading">Planetary <span class="highlight">Defense</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        With millions of space rocks orbiting our sun, identifying which ones pose a genuine threat to Earth is a massive computational challenge. 
+                        By leveraging advanced Machine Learning algorithms and real-time telemetry data, our MLOps pipeline isolates hazardous anomalies from harmless debris, giving humanity the ultimate early warning system.
+                    </p>
+                </div>
+                <div class="about-image-container">
+                    <!-- Corrected image extension back to .jpg -->
+                    <img src="/static/astranaut.webp" alt="Space Exploration" class="rounded-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/static/script.js"></script> <!-- or app.js on the predict page -->
+</body>
+</html>
