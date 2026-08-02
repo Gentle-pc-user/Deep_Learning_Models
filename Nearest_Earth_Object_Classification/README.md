@@ -14,6 +14,12 @@
 
 ---
 
+* ## Application Preview
+
+<div align="center">
+  <img src="static/Images/NEO_Landing_page.png" alt="NEOGuard Landing Page Preview" width="100%">
+</div>
+
 * ## About The Project
 
 **NEOGuard** is a production-ready, full-stack machine learning web application built to analyze and classify Near-Earth Objects (NEOs). By leveraging a Deep Neural Network trained on NASA telemetry data, the application evaluates physical telemetry parameters—such as estimated diameter, relative velocity, and absolute magnitude—to determine whether a celestial body poses a potential hazard to Earth.
