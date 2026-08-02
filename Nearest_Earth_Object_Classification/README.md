@@ -14,13 +14,13 @@
 
 ---
 
-## About The Project
+* ## About The Project
 
 **NEOGuard** is a production-ready, full-stack machine learning web application built to analyze and classify Near-Earth Objects (NEOs). By leveraging a Deep Neural Network trained on NASA telemetry data, the application evaluates physical telemetry parameters—such as estimated diameter, relative velocity, and absolute magnitude—to determine whether a celestial body poses a potential hazard to Earth.
 
 ---
 
-## Tech Stack & Architecture
+* ## Tech Stack & Architecture
 
 * **Backend:** FastAPI, Uvicorn, Pydantic
 * **Machine Learning / Core:** PyTorch, Scikit-Learn, NumPy
@@ -29,7 +29,7 @@
 
 ---
 
-## Setup & Installation using `uv`
+* ## Setup & Installation using `uv`
 
 This project utilizes [uv](https://github.com/astral-sh/uv) for lightning-fast virtual environment creation and package dependency management.
 
