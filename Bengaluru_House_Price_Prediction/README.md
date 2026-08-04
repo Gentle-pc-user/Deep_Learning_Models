@@ -1,3 +1,6 @@
+<div align="center">
+  <img src="house-price-frontend/public/BHP_Banner.png" alt="BHP Prediction Banner" width="100%">
+
 * # Bengaluru House Price Prediction
 
 A full-stack Deep Learning web application that predicts house prices in Bengaluru using a PyTorch Multi-Layer Perceptron (MLP) model.
