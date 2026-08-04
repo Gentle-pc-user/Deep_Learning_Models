@@ -5,7 +5,7 @@
 
 A full-stack Deep Learning web application that predicts house prices in Bengaluru using a PyTorch Multi-Layer Perceptron (MLP) model.
 
-**Live Repository:** [https://github.com/ObsidianTwilight/Deep_Learning_Models](https://github.com/ObsidianTwilight/Deep_Learning_Models)
+**Live Repository:** [https://github.com/Gentle-pc-user/Deep_Learning_Models](https://github.com/ObsidianTwilight/Deep_Learning_Models)
 
 ---
 
