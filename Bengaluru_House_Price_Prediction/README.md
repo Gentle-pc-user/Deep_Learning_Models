@@ -1,5 +1,6 @@
 <div align="center">
   <img src="house-price-frontend/public/BHP_Banner.png" alt="BHP Prediction Banner" width="100%">
+</div>
 
 * # Bengaluru House Price Prediction
 
