@@ -79,4 +79,70 @@ House_Price_Prediction_MLP/
 └── house-price-frontend/          # React frontend
 ```
 * ## Setup Instructions
-1. ### Clone the Repository
+### 1. Clone the Repository
+```bash
+Bash
+git clone https://github.com/Gentle-pc-user/Deep_Learning_Models.git
+cd Deep_Learning_Models
+```
+### 2. Create & Activate Python Virtual Environment
+Windows (PowerShell / CMD):
+```bash
+Bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+macOS / Linux:
+```bash
+Bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+### 3. Install Backend Dependencies
+```bash
+BAsh
+pip install -r requirements.txt
+```
+### 4. Run the FastAPI Backend
+```bash
+Bash
+uvicorn app:app --reload
+```
+The API will be available at:
+→ `http://127.0.0.1:8000`
+→ `Interactive docs: http://127.0.0.1:8000/docs`
+
+### 5. Setup & Run Frontend
+```bash
+Bash
+cd house-price-frontend
+npm install
+npm run dev
+```
+Frontend will run at:
+→ `http://localhost:5173`
+
+* ## How to Use
+
+1. Start the FastAPI backend
+2. Start the React frontend
+3. Fill in the house details (area type, location, size, society, total_sqft, bathrooms, balconies)
+4. Click Predict House Price
+5. Get the predicted price in Lakh INR
+
+* ## Model Details
+
+* Architecture: Fully connected MLP (n_features → 128 → 256 → 104 → 1)
+* Loss Function: MSE (on log-transformed target)
+* Optimizer: Tuned via Optuna (Adam / SGD / RMSprop)
+* Target Transformation: np.log1p(price) during training → np.expm1() during inference
+* Inference Optimization: TorchScript (torch.jit.script)
+
+* ## Notes
+
+* Make sure the files `model/housing_mlp_scripted.pt` and `model/preprocessing.pkl` are present before running the API.
+* The preprocessing pipeline must match exactly what was used during training.
+* Society is an optional field.
+
+* ## License
+This project is open-source and available under the `MIT` License.
