@@ -77,3 +77,6 @@ House_Price_Prediction_MLP/
 ├── app.py
 ├── requirements.txt
 └── house-price-frontend/          # React frontend
+```
+* ## Setup Instructions
+1. ### Clone the Repository
